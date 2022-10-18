@@ -1,0 +1,13 @@
+.topBar {
+  @apply font-medium text-xs text-primary-light flex flex-col md:flex-row  justify-between;
+}
+.topBar .left-items {
+  list-style: none;
+}
+.topBar a {
+  cursor: pointer;
+}
+
+.topBar .right-items a:not(:last-child) {
+  margin-right: 12px;
+}

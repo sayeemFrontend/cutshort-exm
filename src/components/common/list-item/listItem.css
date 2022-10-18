@@ -1,0 +1,10 @@
+.list-group {
+  @apply list-none h-10 w-full flex items-center cursor-pointer  font-medium text-primary hover:text-primary-dark;
+}
+.list-group .mobile svg {
+  transition: all 0.3s linear;
+}
+.list-group:hover .mobile svg {
+  transition: all 0.3s linear;
+  transform: rotate(180deg);
+}

@@ -1,0 +1,24 @@
+.drop-down {
+  @apply lg:relative;
+}
+
+.drop-down > .body {
+  visibility: collapse;
+  height: 0;
+  z-index: 1;
+  left: -28px;
+  width: max-content;
+  background: #fff;
+  @apply sm:shadow-none lg:absolute;
+}
+@media screen and (min-width: 1024px) {
+  .drop-down > .body {
+    border-radius: 12px;
+    -webkit-box-shadow: 0px 10px 70px rgb(0 0 0 / 15%);
+    box-shadow: 0px 10px 70px rgb(0 0 0 / 15%);
+  }
+}
+
+.drop-down:hover > .body {
+  @apply border-l  lg:border-0  pl-4 lg:p-5 visible h-max;
+}
