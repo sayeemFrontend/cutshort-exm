@@ -1,16 +1,16 @@
 import React from "react";
 
-import ListView from "../components/common/list-view/ListView";
-import Slide from "../components/common/slider/Slide";
-import { categories, slideImages } from "./data";
-import "./layout.css";
-import pic3 from "./slide-assets/pic03.png";
-import pic4 from "./slide-assets/pic04.png";
+// import ListView from "../components/common/list-view/ListView";
+// import Slide from "../components/common/slider/Slide";
+// import { categories, slideImages } from "./data";
+// import "./layout.css";
+// import pic3 from "./slide-assets/pic03.png";
+// import pic4 from "./slide-assets/pic04.png";
 
 export default function Layout() {
   return (
     <div className="layout ">
-      <div className=" container">
+      {/* <div className=" container">
         <div className="flex flex-col md:flex-row">
           <div className="w-56 bg-white pt-4 hidden md:inline">
             <ListView list={categories} />
@@ -37,7 +37,7 @@ export default function Layout() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

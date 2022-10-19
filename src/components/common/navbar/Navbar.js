@@ -1,11 +1,9 @@
-import { categories } from "../../../layout/data";
 import ListView from "../list-view/ListView";
 import "./Navbar.css";
 import Modal from "../../modal/Modal";
 import Search from "../../basic/search-input/Search";
 import { useState } from "react";
 import Button from "../../basic/button/Button";
-import ListItem from "../list-item/ListItem";
 import logo from "../../../assets/images/logo.svg";
 import { ReactComponent as MenuBar } from "../../../assets/icons/menubar.svg";
 import { ReactComponent as CrossIcon } from "../../../assets/icons/cross.svg";
@@ -31,10 +29,12 @@ export default function Navbar(params) {
           <ListView list={categoriesForWeb} />
         </div>
         <div className="fill-primary-light hidden lg:inline">
-          <SearchIcon className="w-10" />
+          <SearchIcon className="w-10 cursor-pointer" />
         </div>
         <div className="mx-5">
-          <ListItem className="text-sm" item={{ title: "Sign in" }} />
+          <ul className="inline text-sm text-primary hover:text-primary-dark font-medium">
+            <li>Sign in</li>
+          </ul>
         </div>
         <div className="bg-secondary customBtn hidden lg:block">
           <Button style={{ fontSize: "14px" }} title="Share my work" />

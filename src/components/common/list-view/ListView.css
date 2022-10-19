@@ -1,3 +1,7 @@
 .list-wrapper {
-  @apply flex flex-col items-start lg:flex-row lg:items-center justify-between w-full lg:w-[36rem];
+  @apply flex flex-col lg:flex-row lg:items-center;
+}
+
+.list-wrapper > div {
+  margin-right: 20px;
 }

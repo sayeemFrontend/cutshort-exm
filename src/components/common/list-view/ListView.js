@@ -1,5 +1,4 @@
 import DropDown from "../drop-down/DropDown";
-import ListItem from "../list-item/ListItem";
 import "./ListView.css";
 
 export default function ListView({ list = [] }) {
@@ -10,7 +9,9 @@ export default function ListView({ list = [] }) {
           item?.subList ? (
             <DropDown key={item.id} item={item} />
           ) : (
-            <ListItem className="text-lg lg:text-sm" key={item.id} item={item} />
+            <ul className="text-sm flex items-center cursor-pointer font-medium text-primary hover:text-primary-dark">
+              <li>{item.title}</li>
+            </ul>
           )
         )}
       </div>

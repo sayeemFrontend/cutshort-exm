@@ -1,13 +1,26 @@
 import "./stye.css";
 
 import { ReactComponent as ArrowDown } from "../assets/icons/downArow.svg";
-import { ReactComponent as ArrowRight } from "../assets/icons/downArow.svg";
+import { ReactComponent as ArrowRight } from "../assets/icons/arrowR.svg";
 import { ReactComponent as Widget } from "../assets/icons/widget.svg";
+import { ReactComponent as Love } from "../assets/icons/love.svg";
+import { ReactComponent as PlayOff } from "../assets/icons/playOff.svg";
+import { ReactComponent as Blog } from "../assets/icons/blog.svg";
+import { ReactComponent as FM } from "../assets/icons/fm.svg";
+import pic01 from "../assets/images/pic01.webp";
+import pic02 from "../assets/images/pic02.webp";
+import pic03 from "../assets/images/pic03.webp";
+import pic04 from "../assets/images/pic04.webp";
+import pic05 from "../assets/images/pic05.webp";
 
-export function IconStyle({ children }) {
-  return <div className="icon-style">{children}</div>;
+export const slideImages = [pic01, pic02, pic03, pic04, pic05];
+
+export function colorReturn(id) {
+  if (id % 4 === 1) return "#724e91";
+  if (id % 4 === 2) return "#e54f6d";
+  if (id % 4 === 3) return "#74c4ba";
+  if (id % 4 === 0) return "#f8c630";
 }
-
 export const categoriesForMobile = [
   {
     id: 1,
@@ -106,20 +119,38 @@ export const categoriesForWeb = [
       {
         id: 1,
         title: "Explore Design Work",
-        leftIcon: () => (
-          <IconStyle>
-            <Widget className="w-6" />
-          </IconStyle>
-        ),
-        rightIcon: () => <ArrowRight className="w-4" />,
+        subTitle: "Trending designs to inspire you",
+        leftIcon: () => <Widget className="w-4 " color={colorReturn(1)} />,
+        rightIcon: () => <ArrowRight className="w-3" fill={colorReturn(1)} />,
       },
-      { id: 2, title: "New & Noteworthy" },
+      {
+        id: 2,
+        title: "New & Noteworthy",
+        subTitle: "Up-and-coming designers",
+        leftIcon: () => <Love className="w-4 " color={colorReturn(2)} />,
+        rightIcon: () => <ArrowRight className="w-3" fill={colorReturn(2)} />,
+      },
       {
         id: 3,
         title: "Playoffs",
+        subTitle: "Work designers are riffing on",
+        leftIcon: () => <PlayOff className="w-4 " color={colorReturn(3)} />,
+        rightIcon: () => <ArrowRight className="w-3" fill={colorReturn(3)} />,
       },
-      { id: 4, title: "Blog" },
-      { id: 5, title: "Weekly Warmup" },
+      {
+        id: 4,
+        title: "Blog",
+        subTitle: "Interviews, tutorials, and more",
+        leftIcon: () => <Blog className="w-4 " color={colorReturn(4)} />,
+        rightIcon: () => <ArrowRight className="w-3" fill={colorReturn(4)} />,
+      },
+      {
+        id: 5,
+        title: "Weekly Warmup",
+        subTitle: "Prompt to flex your design skills",
+        leftIcon: () => <FM className="w-4 " color={colorReturn(5)} />,
+        rightIcon: () => <ArrowRight className="w-3" fill={colorReturn(5)} />,
+      },
     ],
   },
   {

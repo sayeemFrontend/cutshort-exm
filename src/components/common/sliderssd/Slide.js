@@ -16,19 +16,15 @@ export default function Slide({ imageList, dotsWrapperClass, dotClass }) {
         <ul className={dotsWrapperClass || "dots-wrapper"}> {dots} </ul>
       </div>
     ),
-    customPaging: (index) => (
-      <div className={dotClass || "custom-dot"}>
-        <img src={imageList[index]} alt="" />
-      </div>
-    ),
+    customPaging: (index) => <div className={dotClass || "custom-dot"} />,
   };
   return (
     <div className="slide">
       <Slider {...settings}>
         {imageList?.map((img) => (
-          <div key={img} className="single-slide">
+          <div key={img.url} className="single-slide">
             <div className="img-wrapper">
-              <img src={img} alt="images" />
+              <img src={img.url} alt="images" />
             </div>
           </div>
         ))}
