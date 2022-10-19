@@ -12,6 +12,17 @@ import pic02 from "../assets/images/pic02.webp";
 import pic03 from "../assets/images/pic03.webp";
 import pic04 from "../assets/images/pic04.webp";
 import pic05 from "../assets/images/pic05.webp";
+import pic06 from "../assets/images/pic06.webp";
+import pic07 from "../assets/images/pic07.webp";
+import pic08 from "../assets/images/pic08.webp";
+import pic09 from "../assets/images/pic09.webp";
+
+export const products = [
+  { id: 1, name: "", image: pic06 },
+  { id: 2, name: "", image: pic07 },
+  { id: 3, name: "", image: pic08 },
+  { id: 4, name: "", image: pic09 },
+];
 
 export const slideImages = [pic01, pic02, pic03, pic04, pic05];
 

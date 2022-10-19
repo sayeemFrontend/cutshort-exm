@@ -9,7 +9,9 @@
     height: 660px;
   }
 } */
-
+.slide .slick-slider {
+  /* z-index: -1; */
+}
 .slide .slick-next {
   right: 24px;
   z-index: 99;
