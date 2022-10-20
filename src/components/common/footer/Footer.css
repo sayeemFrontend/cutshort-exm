@@ -1,0 +1,15 @@
+.footer ul > h4 {
+}
+
+.footer .grid ul {
+  line-height: 32px;
+  display: flex;
+  flex-direction: column;
+}
+.footer ul > a {
+  @apply my-2 text-black opacity-95 hover:opacity-100 text-sm cursor-pointer;
+}
+.footer .social-group img {
+  width: 18px;
+  height: auto;
+}

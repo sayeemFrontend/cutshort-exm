@@ -16,6 +16,69 @@ import pic06 from "../assets/images/pic06.webp";
 import pic07 from "../assets/images/pic07.webp";
 import pic08 from "../assets/images/pic08.webp";
 import pic09 from "../assets/images/pic09.webp";
+import net from "../assets/icons/social/net.svg";
+import tw from "../assets/icons/social/tw.svg";
+import fb from "../assets/icons/social/fb.svg";
+import inst from "../assets/icons/social/inst.svg";
+import pint from "../assets/icons/social/pint.svg";
+export const socialIcons = [
+  { id: 1, icon: net },
+  { id: 2, icon: tw },
+  { id: 3, icon: fb },
+  { id: 4, icon: inst },
+  { id: 5, icon: pint },
+];
+
+export const designers = [
+  { id: 1, title: "Go Pro!" },
+  { id: 2, title: "Explore design work" },
+  { id: 3, title: "Design blog" },
+  { id: 5, title: "Overtime podcast" },
+  { id: 6, title: "Playoffs" },
+  { id: 7, title: "Weekly Warm-Up" },
+  { id: 8, title: "Refer a Friend" },
+  { id: 9, title: "Code of conduct" },
+];
+export const hireDesigner = [
+  { id: 1, title: "post a job opening" },
+  { id: 2, title: "Post a freelance project" },
+  { id: 3, title: "Search for designers" },
+];
+
+export const brands = [{ id: 1, title: "Advertise with us" }];
+export const company = [
+  { id: 1, title: "About" },
+  { id: 2, title: "Careers" },
+  { id: 3, title: "Support" },
+  { id: 5, title: "Media kit" },
+  { id: 6, title: "Testimonials" },
+  { id: 7, title: "API" },
+  { id: 8, title: "Terms of service" },
+  { id: 9, title: "Privacy policy" },
+  { id: 10, title: "Cookie policy" },
+];
+
+export const directories = [
+  { id: 1, title: "Design jobs" },
+  { id: 2, title: "Designers for hire" },
+  { id: 3, title: "Freelance designers for hire" },
+  { id: 5, title: "Tags" },
+  { id: 6, title: "Places" },
+];
+export const designAssets = [
+  { id: 1, title: "Creative Market" },
+  { id: 2, title: "Font spring" },
+  { id: 3, title: "Font Squirrel" },
+];
+
+export const designResources = [
+  { id: 1, title: "Freelancing" },
+  { id: 2, title: "Design Hiring" },
+  { id: 3, title: "Design Portfolio" },
+  { id: 5, title: "Design Education" },
+  { id: 6, title: "Creative Process" },
+  { id: 7, title: "Design Industry Trends" },
+];
 
 export const products = [
   { id: 1, name: "", image: pic06 },

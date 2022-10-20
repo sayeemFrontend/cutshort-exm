@@ -52,6 +52,11 @@
 .slide .slick-dots .dots-wrapper {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow: auto;
+  justify-content: center;
 }
 .slide .slick-dots li {
   margin: 0 4px;

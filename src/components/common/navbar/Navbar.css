@@ -10,11 +10,3 @@
   user-select: none;
   will-change: transform;
 }
-
-.navbar .custom-search {
-  @apply my-4 text-primary-dark border rounded-lg border-[#f3f3f4]  text-sm bg-[#f3f3f4];
-}
-.navbar .custom-search:focus-within {
-  outline: 4px solid rgb(247 185 185 / 24%);
-  @apply bg-white border-secondary;
-}

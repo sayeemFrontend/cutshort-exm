@@ -1,8 +1,11 @@
 import React from "react";
+import ReactDOM from "react-dom";
+
 export default function Modal({ children = null, onClose = () => {} }) {
-  return (
-    <div className="modal px-4 py-4 z-50 lg:hidden w-full min-h-screen h-[1600px]  absolute left-0 top-[72px]">
+  const portal = (
+    <div className="modal bg-white z-50 w-screen h-screen fixed left-0 top-0">
       <div>{children}</div>
     </div>
   );
+  return ReactDOM.createPortal(portal, document.getElementById("root"));
 }
