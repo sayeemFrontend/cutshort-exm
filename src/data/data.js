@@ -1,4 +1,4 @@
-import "./stye.css";
+import "./style.css";
 
 import { ReactComponent as ArrowDown } from "../assets/icons/downArow.svg";
 import { ReactComponent as ArrowRight } from "../assets/icons/arrowR.svg";
@@ -16,7 +16,6 @@ import { ReactComponent as Cpd } from "../assets/icons/course.svg";
 import { ReactComponent as Video } from "../assets/icons/video.svg";
 import { ReactComponent as Desktop } from "../assets/icons/desktop.svg";
 import { ReactComponent as FD } from "../assets/icons/cone.svg";
-import { ReactComponent as FF } from "../assets/icons/flowerCup.svg";
 import { ReactComponent as Account } from "../assets/icons/account.svg";
 import { ReactComponent as Discover } from "../assets/icons/widgetD.svg";
 import { ReactComponent as Graphics } from "../assets/icons/setting.svg";

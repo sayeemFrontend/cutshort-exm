@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import Button from "../../../../components/basic/button/Button";
 import { ReactComponent as Love } from "../../../../assets/icons/love2.svg";
 

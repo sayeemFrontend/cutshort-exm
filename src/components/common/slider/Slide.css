@@ -55,7 +55,6 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  overflow: auto;
   justify-content: center;
 }
 .slide .slick-dots li {
@@ -70,11 +69,12 @@
   height: 60px;
   border-radius: 8px;
   overflow: hidden;
+  transition: box-shadow 200ms ease-in-out, border 200ms ease-in-out, -webkit-box-shadow 200ms ease-in-out;
 }
 .slide .slick-dots .custom-dot:hover {
-  outline: 4px solid rgba(128, 128, 128, 0.336);
-  transition: outline 0.125s linear;
+  box-shadow: 0 0 0 4px rgb(0 0 0 / 10%);
 }
+
 .slide .slick-dots .slick-active .custom-dot {
   border: 2px solid #ea4c89;
 }

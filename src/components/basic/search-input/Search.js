@@ -1,4 +1,4 @@
-import { search } from "../../../assets";
+import search from "../../../assets/icons/search.svg";
 import "./search.css";
 
 export default function Search(props) {
