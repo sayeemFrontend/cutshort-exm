@@ -17,9 +17,9 @@ import {
 export default function Footer() {
   return (
     <div className="footer py-10 bg-[#fafafb]">
-      <div className="container ">
-        <div className="pb-8 flex flex-col lg:flex-row border-b border-[#e7e7e9]">
-          <div className="mb-6 about-dribble max-w-[256px]">
+      <div className="container">
+        <div className="pb-8 flex gap-5 flex-col lg:flex-row border-b border-[#e7e7e9]">
+          <div className="mb-6 about-dribble max-w-[256px] lg:max-w-[160px]">
             <div className="cursor-pointer">
               <Logo color="#ea4c89" hover="#bb3d6e" />
             </div>

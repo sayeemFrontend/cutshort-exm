@@ -7,6 +7,29 @@ import { ReactComponent as Love } from "../assets/icons/love.svg";
 import { ReactComponent as PlayOff } from "../assets/icons/playOff.svg";
 import { ReactComponent as Blog } from "../assets/icons/blog.svg";
 import { ReactComponent as FM } from "../assets/icons/fm.svg";
+import { ReactComponent as JobB } from "../assets/icons/jobB.svg";
+import { ReactComponent as Mail } from "../assets/icons/mail.svg";
+import { ReactComponent as Cup } from "../assets/icons/cup.svg";
+import { ReactComponent as FlowerCup } from "../assets/icons/flowerCup.svg";
+import { ReactComponent as Personal } from "../assets/icons/person.svg";
+import { ReactComponent as Cpd } from "../assets/icons/course.svg";
+import { ReactComponent as Video } from "../assets/icons/video.svg";
+import { ReactComponent as Desktop } from "../assets/icons/desktop.svg";
+import { ReactComponent as FD } from "../assets/icons/cone.svg";
+import { ReactComponent as FF } from "../assets/icons/flowerCup.svg";
+import { ReactComponent as Account } from "../assets/icons/account.svg";
+import { ReactComponent as Discover } from "../assets/icons/widgetD.svg";
+import { ReactComponent as Graphics } from "../assets/icons/setting.svg";
+import { ReactComponent as Font } from "../assets/icons/font.svg";
+import { ReactComponent as Template } from "../assets/icons/template.svg";
+import { ReactComponent as ThreeD } from "../assets/icons/3D.svg";
+import { ReactComponent as Themes } from "../assets/icons/theme.svg";
+import { ReactComponent as Addon } from "../assets/icons/addon.svg";
+import { ReactComponent as OpenShop } from "../assets/icons/openShop.svg";
+
+import { ReactComponent as DesignS } from "../assets/icons/designS.svg";
+import { ReactComponent as Plus } from "../assets/icons/plus.svg";
+
 import pic01 from "../assets/images/pic01.webp";
 import pic02 from "../assets/images/pic02.webp";
 import pic03 from "../assets/images/pic03.webp";
@@ -231,71 +254,184 @@ export const categoriesForWeb = [
     id: 2,
     title: "Find Work",
     subList: [
-      { id: 1, title: "Job Board" },
-      { id: 2, title: "Freelance Projects", span: "PRO+" },
+      {
+        id: 1,
+        title: "Job Board",
+        subTitle: "Find your dream design job",
+        leftIcon: () => <JobB className="w-4 " color={colorReturn(1)} />,
+        rightIcon: () => <ArrowRight className="w-3" fill={colorReturn(1)} />,
+      },
+      {
+        id: 2,
+        title: (
+          <p>
+            Freelance Projects
+            <span className="ml-2 py-[2px] px-[4px] text-[10px] rounded text-white bg-secondary">PRO+</span>
+          </p>
+        ),
+        underLine: <span className="my-2 block w-full h-[1px] bg-[#e7e7e9]"></span>,
+        subTitle: "An exclusive list for contract work",
+        leftIcon: () => <Cup className="w-4 " color={colorReturn(2)} />,
+        rightIcon: () => <ArrowRight className="w-3" fill={colorReturn(2)} />,
+      },
       {
         id: 3,
         title: "Want freelance design projects?",
+        subTitle: "An exclusive list for contract work",
+        leftIcon: () => <Mail className="w-4 " color={colorReturn(3)} />,
+        rightIcon: () => <ArrowRight className="w-3" fill={colorReturn(3)} />,
       },
-      { id: 4, title: "Personalize your profile with video" },
+      {
+        id: 4,
+        title: "Personalize your profile with video",
+        subTitle: "Introduce yourself to new clients with Pitch",
+        leftIcon: () => <Personal className="w-4 " color={colorReturn(4)} />,
+        rightIcon: () => <ArrowRight className="w-3" fill={colorReturn(4)} />,
+      },
     ],
-    rightIcon: () => <ArrowDown className="w-4" />,
   },
   {
     id: 3,
     title: "Learn Design",
     subList: [
-      { id: 1, title: "Certified Product Design Course" },
-      { id: 2, title: "Introduction to UI Design" },
+      {
+        id: 1,
+        title: "Certified Product Design Course",
+        subTitle: "Learn product design in just 16 weeks...",
+        leftIcon: () => <Cpd className="w-4 " color={colorReturn(1)} />,
+        rightIcon: () => <ArrowRight className="w-3" fill={colorReturn(1)} />,
+      },
+      {
+        id: 2,
+        title: "Introduction to UI Design",
+        subTitle: " Learn UI Design Basics and Figma Fundamentals..",
+        leftIcon: () => <Desktop className="w-4 " color={colorReturn(2)} />,
+        rightIcon: () => <ArrowRight className="w-3" fill={colorReturn(2)} />,
+      },
       {
         id: 3,
         title: "Browse our courses & workshops",
+        subTitle: "Level up your skills with our interactive courses and workshops…",
+        leftIcon: () => <Video className="w-4 " color={colorReturn(4)} />,
+        rightIcon: () => <ArrowRight className="w-3" fill={colorReturn(4)} />,
       },
     ],
-    rightIcon: () => <ArrowDown className="w-4" />,
   },
   {
     id: 4,
     title: "Go Pro",
     subList: [
-      { id: 1, title: "For Designers" },
-      { id: 2, title: "For Freelancers" },
+      {
+        id: 1,
+        title: "For Designers",
+        subTitle: "Portfolio creation made easy",
+        leftIcon: () => <FD className="w-4 " color={colorReturn(1)} />,
+        rightIcon: () => <ArrowRight className="w-3" fill={colorReturn(2)} />,
+      },
+      {
+        id: 2,
+        title: "For Freelancers",
+        subTitle: "Fresh leads in your inbox every day",
+        leftIcon: () => <FlowerCup className="w-4 " color={colorReturn(2)} />,
+        rightIcon: () => <ArrowRight className="w-3" fill={colorReturn(2)} />,
+      },
       {
         id: 3,
         title: "For Teams",
+        subTitle: "Build your team’s pipeline or profile",
+        leftIcon: () => <Account className="w-4 " color={colorReturn(3)} />,
+        rightIcon: () => <ArrowRight className="w-3" fill={colorReturn(3)} />,
       },
     ],
-    rightIcon: () => <ArrowDown className="w-4" />,
   },
   {
     id: 5,
     title: "Design Files",
     subList: [
-      { id: 1, title: "Discover" },
-      { id: 2, title: "Graphics" },
+      {
+        id: 1,
+        title: "Discover",
+        subTitle: "A marketplace of digital assets…",
+        leftIcon: () => <Discover className="w-4 " color={colorReturn(1)} />,
+        rightIcon: () => <ArrowRight className="w-3" fill={colorReturn(1)} />,
+      },
+      {
+        id: 2,
+        title: "Graphics",
+        subTitle: "Icons, Illustrations, Patterns, Textures…",
+        leftIcon: () => <Graphics className="w-4 " color={colorReturn(2)} />,
+        rightIcon: () => <ArrowRight className="w-3" fill={colorReturn(2)} />,
+      },
       {
         id: 3,
         title: "Fonts",
+        subTitle: "Display, Script, Sans Serif, Serif…",
+        leftIcon: () => <Font className="w-4 " color={colorReturn(3)} />,
+        rightIcon: () => <ArrowRight className="w-3" fill={colorReturn(3)} />,
       },
-      { id: 4, title: "3D" },
-      { id: 5, title: "Templates" },
-      { id: 6, title: "Add-Ons" },
-      { id: 7, title: "Web Themes" },
-      { id: 8, title: "Open a Shop" },
+      {
+        id: 4,
+        title: "Templates",
+        subTitle: "Mock Ups, Social Media, Presentations…",
+        leftIcon: () => <Template className="w-4 " color={colorReturn(4)} />,
+        rightIcon: () => <ArrowRight className="w-3" fill={colorReturn(4)} />,
+      },
+      {
+        id: 5,
+        title: "3D",
+        subTitle: "Characters, Objects, Textures…",
+        leftIcon: () => <ThreeD className="w-4 " color={colorReturn(5)} />,
+        rightIcon: () => <ArrowRight className="w-3" fill={colorReturn(5)} />,
+      },
+      {
+        id: 6,
+        title: "Themes",
+        subTitle: "WordPress, Shopify, Bootstrap, HTML5…",
+        leftIcon: () => <Themes className="w-4 " color={colorReturn(6)} />,
+        rightIcon: () => <ArrowRight className="w-3" fill={colorReturn(6)} />,
+      },
+      {
+        id: 7,
+        title: "Add on",
+        subTitle: "Procreate, Affinity, Photoshop, InDesign…",
+        underLine: <span className="my-2 block w-full h-[1px] bg-[#e7e7e9]"></span>,
+        leftIcon: () => <Addon className="w-4 " color={colorReturn(7)} />,
+        rightIcon: () => <ArrowRight className="w-3" fill={colorReturn(7)} />,
+      },
+      {
+        id: 8,
+        title: "Open a Shop",
+        subTitle: "Earn money doing what you love",
+        leftIcon: () => <OpenShop className="w-4 " color={colorReturn(8)} />,
+        rightIcon: () => <ArrowRight className="w-3" fill={colorReturn(8)} />,
+      },
     ],
-    rightIcon: () => <ArrowDown className="w-4" />,
   },
   {
     id: 6,
     title: "Hire Designers",
     subList: [
-      { id: 1, title: "About Dribble Hiring" },
-      { id: 2, title: "Designer Search" },
       {
-        id: 3,
-        title: "List my Job Opening",
+        id: 1,
+        title: "Designer Search",
+        subTitle: "Find, contact, and hire designers",
+        leftIcon: () => <DesignS className="w-4 " color={colorReturn(1)} />,
+        rightIcon: () => <ArrowRight className="w-3" fill={colorReturn(1)} />,
       },
-      { id: 4, title: "Post a Freelance Project" },
+      {
+        id: 2,
+        title: "List my Job Opening",
+        subTitle: "The #1 job board for creatives",
+        leftIcon: () => <Plus className="w-4 " color={colorReturn(2)} />,
+        rightIcon: () => <ArrowRight className="w-3" fill={colorReturn(2)} />,
+      },
+      {
+        id: 4,
+        title: "Post a Freelance Project",
+        subTitle: "Board for freelance & contract work",
+        leftIcon: () => <Plus className="w-4 " color={colorReturn(3)} />,
+        rightIcon: () => <ArrowRight className="w-3" fill={colorReturn(3)} />,
+      },
     ],
     rightIcon: () => <ArrowDown className="w-4" />,
   },

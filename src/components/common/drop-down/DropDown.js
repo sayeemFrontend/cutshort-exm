@@ -2,16 +2,19 @@ import React, { useState } from "react";
 import "./dropDown.css";
 
 export function WebSubItemDisplay({ item }) {
-  const { title = "", subTitle = "", rightIcon = null, leftIcon = null } = item;
+  const { title = "", subTitle = "", rightIcon = null, leftIcon = null, underLine = null } = item;
   return (
-    <ul className="flex items-center group cursor-pointer">
-      {leftIcon && <ul className={`icon-style group-hover:opacity-100`}>{leftIcon()}</ul>}
-      <ul className="flex-1 my-2  mr-[50px]">
-        <li className="text-sm cursor-pointer  w-full font-normal text-primary-dark">{title}</li>
-        <li className="text-xs cursor-pointer  w-full font-normal text-primary">{subTitle}</li>
+    <>
+      <ul className="flex items-center group cursor-pointer">
+        {leftIcon && <ul className={`icon-style group-hover:opacity-100`}>{leftIcon()}</ul>}
+        <ul className="flex-1 my-2  mr-[50px]">
+          <li className="text-sm cursor-pointer font-medium w-full  text-primary-dark">{title}</li>
+          <li className="text-xs cursor-pointer  w-full font-normal text-primary">{subTitle}</li>
+        </ul>
+        {rightIcon && <ul className="opacity-0 group-hover:opacity-100">{rightIcon()}</ul>}
       </ul>
-      {rightIcon && <ul className="opacity-0 group-hover:opacity-100">{rightIcon()}</ul>}
-    </ul>
+      {underLine && underLine}
+    </>
   );
 }
 

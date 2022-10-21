@@ -39,7 +39,10 @@ export default function UserSection({ user = {} }) {
           </div>
         </ul>
         <ul className="ml-auto hidden lg:flex ">
-          <Button className="mr-3 w-[70px] h-10 rounded-lg bg-[#f3f3f4] text-primary-dark" title="Save" />
+          <Button
+            className="mr-3 w-[70px] h-10 rounded-lg bg-[#f3f3f4] hover:bg-[#dbdbde] text-primary-dark"
+            title="Save"
+          />
           <Button className="w-20 h-10 rounded-lg  bg-secondary text-white" title="Like">
             <Love width="13px" className="mr-1" color="white" fill="white" />
           </Button>

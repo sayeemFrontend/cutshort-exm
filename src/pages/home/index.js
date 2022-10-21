@@ -22,24 +22,24 @@ export const user = {
 export default function Home() {
   return (
     <div className="home container mb-10">
-      <div className="mb-6 mt-16 lg:mx-24">
+      <div className="mb-6 mt-16 lg:mx-32">
         <UserSection user={user} />
       </div>
       <div className="mb-6 lg:mb-0 ">
         <UserIconSec user={user} />
       </div>
-      <div className="mb-[126px] lg:mx-24">
+      <div className="mb-[126px] lg:mx-32">
         <Slide imageList={slideImages} />
       </div>
-      <div className="mb-10 lg:mx-24">
+      <div className="mb-10 lg:mx-32">
         <Description />
       </div>
 
-      <div className="mb-16">
+      <div className="mb-16 lg:mx-12">
         <UserHire user={user} />
       </div>
 
-      <div className="mb-12 productSec">
+      <div className="mb-12 productSec lg:mx-12">
         <ul className="mb-2 flex items-center justify-between">
           <li className="font-bold text-base">More by Eren ツ</li>
           <li className="text-sm text-secondary hover:opacity-70 cursor-pointer">View profile</li>

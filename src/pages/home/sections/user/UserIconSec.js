@@ -59,13 +59,13 @@ export default function UserIconSec({ user = {} }) {
       className="right-part flex flex-row lg:flex-col-reverse lg:absolute lg:top-[140px] lg:right-10"
     >
       <ul className="lg:mt-3 flex w-[90px] lg:w-max justify-between flex-row lg:flex-col lg:h-[90px]">
-        <li className="relative parent">
+        <li className=" parent">
           <IconStye>
             <Save />
           </IconStye>
           <Tooltip heading="Save" />
         </li>
-        <li className="relative parent">
+        <li className=" parent">
           <IconStye>
             <Love color="black" fill="black" stroke="black" />
           </IconStye>
@@ -79,13 +79,13 @@ export default function UserIconSec({ user = {} }) {
           </IconStye>
           <Tooltip heading="Share" />
         </li>
-        <li className="relative parent">
+        <li className="parent">
           <IconStye badge>
             <Massage />
           </IconStye>
           <Tooltip heading="Feedback" />
         </li>
-        <li className="lg:order-2 relative parent">
+        <li className="lg:order-2 parent">
           <IconStye>
             <Error />
           </IconStye>
