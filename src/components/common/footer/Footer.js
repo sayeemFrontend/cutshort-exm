@@ -28,7 +28,7 @@ export default function Footer() {
             </p>
             <ul className=" social-group flex flex-wrap gap-4">
               {socialIcons?.map((li) => (
-                <a key={li.id} href>
+                <a key={li.id} href={li.link}>
                   <img src={li.icon} alt="icon" />
                 </a>
               ))}
@@ -38,7 +38,7 @@ export default function Footer() {
             <ul>
               <h4>For designers</h4>
               {designers?.map((li) => (
-                <a href key={li.id}>
+                <a href={li.link} key={li.id}>
                   {li.title}
                 </a>
               ))}
@@ -46,13 +46,13 @@ export default function Footer() {
             <ul>
               <h4>Hire designers</h4>
               {hireDesigner?.map((li) => (
-                <a key={li.id} href>
+                <a key={li.id} href={li.link}>
                   {li.title}
                 </a>
               ))}
               <h4 className="mt-4">Brands</h4>
               {brands?.map((li) => (
-                <a href key={li.id}>
+                <a href={li.link} key={li.id}>
                   {li.title}
                 </a>
               ))}
@@ -60,7 +60,7 @@ export default function Footer() {
             <ul>
               <h4>Company</h4>
               {company?.map((li) => (
-                <a key={li.id} href>
+                <a key={li.id} href={li.link}>
                   {li.title}
                 </a>
               ))}
@@ -68,13 +68,13 @@ export default function Footer() {
             <ul>
               <h4>Directories</h4>
               {directories?.map((li) => (
-                <a key={li.id} href>
+                <a key={li.id} href={li.link}>
                   {li.title}
                 </a>
               ))}
               <h4 className="mt-4">Design assets</h4>
               {designAssets?.map((li) => (
-                <a key={li.id} href>
+                <a key={li.id} href={li.link}>
                   {li.title}
                 </a>
               ))}
@@ -82,7 +82,7 @@ export default function Footer() {
             <ul>
               <h4>Design Resources</h4>
               {designResources?.map((li) => (
-                <a key={li.id} href>
+                <a key={li.id} href={li.link}>
                   {li.title}
                 </a>
               ))}
@@ -96,7 +96,7 @@ export default function Footer() {
             <img width="24px" src={netF} alt="Icon" />
           </li>
           <li>
-            <span class="mr-2 text-primary-dark font-medium">19,693,689</span>
+            <span className="mr-2 text-primary-dark font-medium">19,693,689</span>
             shots dribbbled
           </li>
         </ul>

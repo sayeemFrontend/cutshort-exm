@@ -12,7 +12,7 @@ export function IconStye({ children }) {
 
 export default function UserSection({ user = {} }) {
   return (
-    <div className="">
+    <div>
       <div className="left-part flex flex-row">
         <ul>
           <li className="mb-4 font-bold text-xl block lg:hidden">{user.heading || null}</li>

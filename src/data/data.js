@@ -1,5 +1,5 @@
 import "./style.css";
-
+import { colorReturn } from "../utils/color";
 import { ReactComponent as ArrowDown } from "../assets/icons/downArow.svg";
 import { ReactComponent as ArrowRight } from "../assets/icons/arrowR.svg";
 import { ReactComponent as Widget } from "../assets/icons/widget.svg";
@@ -43,6 +43,34 @@ import tw from "../assets/icons/social/tw.svg";
 import fb from "../assets/icons/social/fb.svg";
 import inst from "../assets/icons/social/inst.svg";
 import pint from "../assets/icons/social/pint.svg";
+
+export function SubComponent() {
+  const lists = [
+    { id: 1, title: "Animation" },
+    { id: 2, title: "Branding" },
+    { id: 3, title: "Illustration" },
+    { id: 4, title: "Mobile" },
+    { id: 5, title: "Print" },
+    { id: 6, title: "Product Design" },
+    { id: 7, title: "Typography" },
+    { id: 8, title: "Web Design" },
+  ];
+  return (
+    <div className="subBody ">
+      <p className="font-medium text-primary-dark">Browse Categories</p>
+      <ul className="leading-9 text-sm ">
+        {lists?.map((li) => (
+          <li key={li.id} className="text-primary-light cursor-pointer hover:text-primary-dark">
+            <a key={li.id} href={li.link}>
+              {li.title}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
 export const socialIcons = [
   { id: 1, icon: net },
   { id: 2, icon: tw },
@@ -61,6 +89,7 @@ export const designers = [
   { id: 8, title: "Refer a Friend" },
   { id: 9, title: "Code of conduct" },
 ];
+
 export const hireDesigner = [
   { id: 1, title: "post a job opening" },
   { id: 2, title: "Post a freelance project" },
@@ -68,6 +97,7 @@ export const hireDesigner = [
 ];
 
 export const brands = [{ id: 1, title: "Advertise with us" }];
+
 export const company = [
   { id: 1, title: "About" },
   { id: 2, title: "Careers" },
@@ -87,6 +117,7 @@ export const directories = [
   { id: 5, title: "Tags" },
   { id: 6, title: "Places" },
 ];
+
 export const designAssets = [
   { id: 1, title: "Creative Market" },
   { id: 2, title: "Font spring" },
@@ -103,20 +134,14 @@ export const designResources = [
 ];
 
 export const products = [
-  { id: 1, name: "", image: pic06 },
-  { id: 2, name: "", image: pic07 },
-  { id: 3, name: "", image: pic08 },
-  { id: 4, name: "", image: pic09 },
+  { id: 1, name: "", image: pic06, title: "View Onboarding: Sign In #Exploration" },
+  { id: 2, name: "", image: pic07, title: "View Stellar: Onboarding | Login & Signup" },
+  { id: 3, name: "", image: pic08, title: "View Onboarding: Sign In #Exploration" },
+  { id: 4, name: "", image: pic09, title: "View Nuntium: Sign In & Sign Up Screens" },
 ];
 
 export const slideImages = [pic01, pic02, pic03, pic04, pic05];
 
-export function colorReturn(id) {
-  if (id % 4 === 1) return "#724e91";
-  if (id % 4 === 2) return "#e54f6d";
-  if (id % 4 === 3) return "#74c4ba";
-  if (id % 4 === 0) return "#f8c630";
-}
 export const categoriesForMobile = [
   {
     id: 1,
@@ -248,6 +273,7 @@ export const categoriesForWeb = [
         rightIcon: () => <ArrowRight className="w-3" fill={colorReturn(5)} />,
       },
     ],
+    subBody: <SubComponent />,
   },
   {
     id: 2,

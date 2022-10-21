@@ -3,7 +3,7 @@ import React from "react";
 export default function Description() {
   return (
     <div>
-      <div class="description text-primary-dark text-sm lg:text-lg ">
+      <div className="description text-primary-dark text-sm lg:text-lg ">
         <p>Yo, what's up guys! 🥳</p>
         <p>It's tiring to write a different description for each shot, just like the shot and move on, love ya! 😘</p>
         <p>

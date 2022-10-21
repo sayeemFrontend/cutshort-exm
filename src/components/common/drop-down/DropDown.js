@@ -5,11 +5,11 @@ export function WebSubItemDisplay({ item }) {
   const { title = "", subTitle = "", rightIcon = null, leftIcon = null, underLine = null } = item;
   return (
     <>
-      <ul className="flex items-center group cursor-pointer">
+      <ul className="mb-4 flex items-center group cursor-pointer">
         {leftIcon && <ul className={`icon-style group-hover:opacity-100`}>{leftIcon()}</ul>}
         <ul className="flex-1 my-2  mr-[50px]">
-          <li className="text-sm cursor-pointer font-medium w-full  text-primary-dark">{title}</li>
-          <li className="text-xs cursor-pointer  w-full font-normal text-primary">{subTitle}</li>
+          <li className="mb-1 text-sm cursor-pointer font-medium w-full  text-primary-dark">{title}</li>
+          <li className="text-xs cursor-pointer max-w-[252px]  w-full font-normal text-primary">{subTitle}</li>
         </ul>
         {rightIcon && <ul className="opacity-0 group-hover:opacity-100">{rightIcon()}</ul>}
       </ul>
@@ -60,11 +60,14 @@ export function DropDownWeb({ item }) {
       <ul>
         <li>{title}</li>
       </ul>
-      <div className="body ">
+      <div className="body flex ">
         <div className="content">
-          {subList?.map((subItem) => (
-            <WebSubItemDisplay key={subItem.id} item={subItem} />
-          ))}
+          <div className="group-wrapper">
+            {subList?.map((subItem) => (
+              <WebSubItemDisplay key={subItem.id} item={subItem} />
+            ))}
+          </div>
+          {item.subBody ? <div className="subContent">{item.subBody}</div> : null}
         </div>
       </div>
     </>

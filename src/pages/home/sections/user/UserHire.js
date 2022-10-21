@@ -18,7 +18,7 @@ export default function UserHire({ user }) {
         <p className="text-sm text-primary-dark">let's create something amazing together →</p>
       </div>
 
-      <Button className="mx-auto w-[100px] h-10 rounded-lg  bg-secondary text-white" title="Hire Me">
+      <Button className="mx-auto w-[100px] h-10 rounded-lg  bg-secondary hover:opacity-80 text-white" title="Hire Me">
         <Mail width="13px" className="mr-1" color="white" fill="white" />
       </Button>
     </>

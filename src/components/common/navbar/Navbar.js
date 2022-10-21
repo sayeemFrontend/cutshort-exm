@@ -1,6 +1,6 @@
 import ListView from "../list-view/ListView";
 import "./Navbar.css";
-import Modal from "../../modal/Modal";
+import Modal from "../modal/Modal";
 import Search from "../../basic/search-input/Search";
 import { useState } from "react";
 import Button from "../../basic/button/Button";
@@ -41,7 +41,7 @@ export default function Navbar(params) {
 
       <div className="block lg:hidden">
         {modal && (
-          <Modal>
+          <Modal onClose={() => setModal(false)}>
             <div className="navbar">
               <div className="h-full flex items-center justify-between mx-4">
                 <div className="cursor-pointer">

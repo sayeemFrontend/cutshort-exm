@@ -17,15 +17,23 @@
   z-index: 100;
 }
 .drop-down-web .body .content {
-  padding: 24px 46px;
   margin-top: 16px;
   width: max-content;
-  background: #fff;
+  display: flex;
   border-radius: 12px;
+  overflow: hidden;
+  background-color: white;
   -webkit-box-shadow: 0px 10px 70px rgb(0 0 0 / 15%);
   box-shadow: 0px 10px 70px rgb(0 0 0 / 15%);
 }
-
+.drop-down-web .body .content .group-wrapper {
+  background: #fff;
+  padding: 24px 46px;
+}
+.drop-down-web .body .content .subContent {
+  background: #f8f8f8;
+  padding: 24px 46px;
+}
 .drop-down-web:hover .body {
   visibility: visible;
   height: fit-content;
